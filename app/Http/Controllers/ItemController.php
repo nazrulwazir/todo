@@ -43,7 +43,7 @@ class ItemController extends Controller
             'description'   =>  'required',
         ]);
 
-        $create = Item::create($request->all());
+        $store = Item::create($request->all());
 
         return redirect()->route('items.index');
     }
